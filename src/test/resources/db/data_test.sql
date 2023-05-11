@@ -1,12 +1,3 @@
-DELETE FROM profile;
-DELETE FROM user_role;
-DELETE FROM user_belong;
-DELETE FROM users;
-DELETE FROM task;
-DELETE FROM sprint;
-DELETE FROM project;
-ALTER SEQUENCE users_id_seq RESTART WITH 1;
-
 insert into users (EMAIL, PASSWORD, FIRST_NAME, LAST_NAME, DISPLAY_NAME)
 values ('user@gmail.com', '{noop}password', 'userFirstName', 'userLastName', 'userDisplayName'),
        ('admin@gmail.com', '{noop}admin', 'adminFirstName', 'adminLastName', 'adminDisplayName'),
@@ -19,8 +10,7 @@ values (0, 1),
        (1, 2),
        (0, 2);
 
-DELETE FROM reference;
-ALTER SEQUENCE reference_id_seq RESTART WITH 1;
+
 --============ References =================
 insert into reference (CODE, TITLE, REF_TYPE)
 -- TASK
@@ -73,15 +63,6 @@ values ('assigned', 'Assigned', 6, '1'),
 insert into profile (ID, LAST_FAILED_LOGIN, LAST_LOGIN, MAIL_NOTIFICATIONS)
 values (1, null, null, 49),
        (2, null, null, 14);
-
-DELETE FROM contact;
-insert into contact (ID, CODE, VALUE)
-values (1, 'skype', 'userSkype'),
-       (1, 'mobile', '+01234567890'),
-       (1, 'website', 'user.com'),
-       (2, 'github', 'adminGitHub'),
-       (2, 'tg', 'adminTg'),
-       (2, 'vk', 'adminVk');
 
 -- bugtracking
 INSERT INTO project (id, code, title, description, type_code, startpoint, endpoint, parent_id) VALUES (2, 'task tracker', 'PROJECT-1', 'test project', 'task tracker', null, null, null);

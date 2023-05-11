@@ -22,4 +22,16 @@
 - https://habr.com/ru/articles/259055/
 
 Список выполненных задач:
-...
+- [X] Onboarding
+- [ ] Delete Social networks
+- [X] Take out sensitive information
+- [X] Configure the H2 in memory test database
+- [ ] Write tests for all public methods of the Profile Test Controller controller.
+- [ ] Add adding tags to a task
+- [ ] Add the ability to subscribe to tasks that are not assigned to the current user
+- [ ] Add automatic time counting for how long the task was in operation, testing, etc.
+- [ ] Write a Dockerfile for the main server
+- [ ] Write a docker-compose file to run the server container together with the database and nginx
+- [ ] Add localization in at least two languages for email templates and the home page index.html .
+- [ ] Implement a backlog – a complete list of tasks (with paging) that must be completed and do not yet relate to any sprint. (back + front)
+- [ ] Redo the "friend-for" recognition mechanism between the front and back from JSESSIONID to JWT
