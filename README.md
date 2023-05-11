@@ -23,7 +23,7 @@
 
 Список выполненных задач:
 - [X] Onboarding
-- [ ] Delete Social networks
+- [X] Delete Social networks
 - [X] Take out sensitive information
 - [X] Configure the H2 in memory test database
 - [ ] Write tests for all public methods of the Profile Test Controller controller.
